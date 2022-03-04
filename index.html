@@ -1,110 +1,138 @@
 <html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-  </head>
 
-  <body>
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo"
-          ><img src="images/logo.jpg" alt="Logo" width="58"
-        /></a>
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a class="cyan lighten-3 white-text" href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="cyan lighten-3 white-text" href="nosotros.html"
-              >Nosotros</a
-            >
-          </li>
-          <li>
-            <a class="cyan lighten-3 white-text" href="contacto.html"
-              >Contacto</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
 
-    <div class="container">
-      <table class="striped responsive-table">
-        <thead>
-          <tr>
-            <th>Pastel</th>
-            <th>Sabor</th>
-            <th>Precio</th>
-          </tr>
-        </thead>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><img src="images/logo.jpg" alt="Logo"
+          width="58" /></a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a class="cyan lighten-3 white-text" href="index.html">Inicio</a>
+        </li>
 
-        <tbody>
-          <tr>
-            <td>Limonate</td>
-            <td>limon</td>
-            <td>$2.87</td>
-          </tr>
-          <tr>
-            <td>Fresoneate</td>
-            <td>Fresa</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Chocolatoso</td>
-            <td>Chocolate</td>
-            <td>$7.00</td>
-          </tr>
-          <tr>
-            <td>Big Mix</td>
-            <td>Mixto</td>
-            <td>$14.00</td>
-          </tr>
-        </tbody>
-      </table>
+      </ul>
+    </div>
+  </nav>
 
+  <div class="container">
+    <table class="striped responsive-table">
+      <thead>
+        <tr>
+          <th>Pastel</th>
+          <th>Sabor</th>
+          <th>Precio</th>
+          <th>En existencias</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Limonate</td>
+          <td>limon</td>
+          <td>$2.87</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Fresoneate</td>
+          <td>Fresa</td>
+          <td>$3.76</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Chocolatoso</td>
+          <td>Chocolate</td>
+          <td>$7.00</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Big Mix</td>
+          <td>Mixto</td>
+          <td>$14.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="input-field col s12">
       <div class="input-field col s12">
-        <select>
-          <option value="" disabled selected>Elija sabor</option>
-          <option value="1">Limon</option>
-          <option value="2">Fresa</option>
-          <option value="3">Chocolate</option>
-          <option value="4">Mixto</option>
+        <select multiple>
+          <option disabled selected>Elija sabores: </option>
+          <option>Limon</option>
+          <option>Fresa</option>
+          <option>Chocolate</option>
         </select>
-        <label>tipos</label>
-        <select>
-          <option value="" disabled selected>
-            Elija sabor extra si lo desea
-          </option>
-          <option value="1">Limon</option>
-          <option value="2">Fresa</option>
-          <option value="3">Chocolate</option>
-        </select>
-        <select>
-          <option value="" disabled selected>
-            Elija sabor extra si lo desea
-          </option>
-          <option value="1">Limon</option>
-          <option value="2">Fresa</option>
-          <option value="3">Chocolate</option>
-        </select>
-        <button
-          class="btn waves-effect waves-light"
-          type="submit"
-          name="action"
-        >
-          Comprar
-          <i class="material-icons right">payment</i>
-        </button>
       </div>
+      <div class="input-field col s12 m6">
+        <select class="icons">
+          <option disabled selected>Elija el adorno</option>
+          <option data-icon="images/flor.jpg" class="left">Flor 1</option>
+          <option data-icon="images/flor2.jpg" class="left">Flor 2</option>
+          <option data-icon="images/mm.jpg" class="left">M&M</option>
+          <option data-icon="images/boda.jpg" class="left">Boda</option>
+        </select>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input placeholder="" id="first_name" type="text" class="validate" />
+              <label for="first_name">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input placeholder="" id="last_name" type="text" class="validate" />
+              <label for="last_name">Apellido</label>
+            </div>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <input Placeholder="" id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input placeholder=""id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Telephone</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">text_format</i>
+            <input placeholder="" id="text" type="text" class="validate">
+            <label for="first_name">Descripcion del pastel</label>
+          </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        Comprar
+        <i class="material-icons right">payment</i>
+      </button>
+      </form>
     </div>
 
-    <script src="js/funcionalidades.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
+  </div>
+  </div>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Informacion</h5>
+          <p class="grey-text text-lighten-4">Dirección: Isla Aguada Km. 2, El, Puente Champoton, Arenal, 24400 Champotón, Camp.</p>
+          <p class="grey-text text-lighten-4">Horarios: Lunes - Viernes de 8am - 5pm</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022 Copyright
+      </div>
+    </div>
+  </footer>
+  <script src="js/funcionalidades.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
 </html>
